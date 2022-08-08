@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sistem Pendaftaran</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<style>
+		body{
+			background-image: linear-gradient( #F34F41,#B8F4FF);
+		}
+		.banner img{
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+		}
+		.form{
+			display: block;
+			border: 2px solid white;
+			width: 75%;
+			padding-top: 210px;
+			margin-right: auto;
+			margin-left: auto;
+			background-image: url('7a7b38e866fde41fedf2ab40141b5edf.jpg');
+
+			
+
+		}
+		form{
+			text-align: center;
+			padding-bottom: 200px;
+			font-family: "Lucida Handwriting","Brush Script MT",cursive;
+
+		
+
+
+
+		}
+		.text{
+			margin-bottom: 5px;
+			text-align: center;
+
+			
+		}
+		.footer{
+			background-image: linear-gradient(#FFD380,#F34F41);
+			width: 75%;
+			margin-right: auto;
+			margin-left: auto;
+		}
+		.text:hover{
+			background-color: red;
+		}
+		.btn{
+			font-family: "Lucida Handwriting","Brush Script MT",cursive;
+
+		}
+		.btn:hover{
+			background-color: red;
+		}
+
+
+	
+	</style>
+</head>
+<body>
+	<div class="banner">
+		<img src="Florist.jpg">
+	</div>
+	<div class="form">
+	<form method="post">
+		Nama Pengguna
+		<input type="text" name="Nama Pengguna" autofocus="" autocapitalize="none" autocomplete="Ussername" required="" id="id_ussername" class="text">
+		<br>
+		Kata Laluan
+		<input type="password" name="password" autocomplete="current-password" required="" id="id_password" class="text">
+		<br>
+		<i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+		<input type="submit" value="Hantar" class="btn btn-primary" >
+		
+	</form>
+	<script>
+		const togglePassword=document.querySelector('#togglePassword');
+		const password=document.querySelector('#id_password');
+
+		togglePassword.addElementListener('click',function(e){
+
+
+		});
+	</script>
+	</div>
+	<div class="footer">
+		<marquee>
+		&copy; Sistem Pendaftaran
+	</marquee>
+	</div>
+
+</body>
+</html>
